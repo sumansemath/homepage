@@ -12,16 +12,20 @@
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://sumanse.com/">
 <link rel="icon" href="images/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<!-- 글꼴: 제목 G마켓 산스(G마켓, 상업적 무료 사용), 본문 SUIT(SIL OFL) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2.0.5/fonts/variable/woff2/SUIT-Variable.css">
 <style>
+@font-face {
+  font-family: "GmarketSans"; font-weight: 100 900; font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff");
+}
 :root {
   --bg: #f5f6fb; --card: #ffffff; --fg: #151a3e; --muted: #5b6185; --line: #dde0ee;
   --navy: #1f2b80; --navy-ink: #1f2b80; --yellow: #f3c316; --yellow-soft: #fff4c7;
   --hero-bg: #1f2b80; --hero-fg: #ffffff; --hero-muted: #c7cdf3;
-  --font-display: "Black Han Sans", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  --font-body: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --font-display: "GmarketSans", "SUIT Variable", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --font-body: "SUIT Variable", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 72px; }
