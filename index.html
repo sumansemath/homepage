@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>수학이 만드는 세상 | 안양 수학학원 수만세</title>
+<meta name="description" content="안양 수학학원 수학이 만드는 세상(수만세). 초등부터 고3 대입까지 함께하는 수학학원. (구)김범수수학학원. 상담 031-444-2223">
+<meta property="og:title" content="수학이 만드는 세상 | 안양 수학학원">
+<meta property="og:description" content="초등부터 고3 대입까지 함께하는 수학학원. 2005년부터 안양에서.">
+<meta property="og:image" content="https://sumanse.com/images/logo.png">
+<meta property="og:url" content="https://sumanse.com/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://sumanse.com/">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>
+:root {
+  --bg: #f5f6fb; --card: #ffffff; --fg: #151a3e; --muted: #5b6185; --line: #dde0ee;
+  --navy: #1f2b80; --navy-ink: #1f2b80; --yellow: #f3c316; --yellow-soft: #fff4c7;
+  --hero-bg: #1f2b80; --hero-fg: #ffffff; --hero-muted: #c7cdf3;
+  --font-display: "Black Han Sans", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --font-body: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.7; word-break: keep-all; overflow-wrap: break-word; }
+img, video { max-width: 100%; display: block; }
+a { color: inherit; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+p { margin: 0; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+section { padding-block: 72px; }
+h2 { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.7rem, 4vw, 2.3rem); line-height: 1.3; }
+h3 { font-size: 1.12rem; font-weight: 700; line-height: 1.4; }
+.eyebrow { font-size: .8rem; font-weight: 700; letter-spacing: .08em; color: var(--navy-ink); }
+.sec-head { display: grid; gap: 10px; margin-bottom: 32px; }
+.lead { color: var(--muted); max-width: 40em; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 999px; font-weight: 700; text-decoration: none; transition: transform .15s, background .15s; }
+.btn:hover { transform: translateY(-1px); }
+.btn-yellow { background: var(--yellow); color: #151a3e; }
+.btn-ghost { border: 1.5px solid rgba(255,255,255,.5); color: #fff; }
+.btn-ghost:hover { background: rgba(255,255,255,.1); }
+.btn-navy { background: var(--navy); color: #fff; }
+
+/* NAV */
+.nav { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--font-display); font-size: 1.25rem; color: var(--navy); }
+.brand img { width: 40px; height: 40px; }
+.menu { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
+.menu a { display: block; padding: 8px 12px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: .95rem; }
+.menu a:hover { background: var(--bg); color: var(--navy); }
+.menu .call a { background: var(--navy); color: #fff; margin-left: 6px; }
+.menu-btn { display: none; background: none; border: 0; padding: 8px; cursor: pointer; color: var(--navy); }
+@media (max-width: 760px) {
+  .menu-btn { display: block; }
+  .menu { display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; background: #fff; border-bottom: 1px solid var(--line); padding: 8px 16px 16px; }
+  .menu.open { display: flex; }
+  .menu .call a { margin: 8px 0 0; text-align: center; }
+}
+
+/* HERO */
+.hero { background: var(--hero-bg); color: var(--hero-fg); position: relative; overflow: hidden; }
+.hero::before { content: ""; position: absolute; width: 720px; height: 720px; border-radius: 50%; right: -260px; top: -140px; box-shadow: -46px 0 0 0 rgba(243,195,22,.18); }
+.hero .wrap { position: relative; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; padding-block: 88px 96px; }
+.hero h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.2; }
+.hero h1 em { font-style: normal; color: var(--yellow); }
+.hero p { color: var(--hero-muted); font-size: 1.1rem; margin-top: 18px; max-width: 30em; }
+.hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.hero-logo { background: #fff; border-radius: 50%; padding: 28px; width: min(340px, 100%); aspect-ratio: 1; justify-self: center; box-shadow: 0 20px 60px rgba(0,0,0,.25); }
+.hero-logo img { width: 100%; height: 100%; object-fit: contain; }
+.badge { display: inline-block; font-size: .85rem; font-weight: 700; color: var(--yellow); border: 1px solid rgba(243,195,22,.5); padding: 4px 12px; border-radius: 999px; margin-bottom: 18px; }
+@media (max-width: 760px) {
+  .hero .wrap { grid-template-columns: 1fr; padding-block: 56px 64px; }
+  .hero-logo { order: -1; width: 180px; padding: 16px; justify-self: start; }
+}
+
+/* STATS */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px 20px; }
+.stat b { display: block; font-family: var(--font-display); font-weight: 400; font-size: 2rem; color: var(--navy); line-height: 1.2; }
+.stat span { color: var(--muted); font-size: .95rem; }
+@media (max-width: 760px) { .stats { grid-template-columns: 1fr 1fr; } }
+
+/* DIRECTOR */
+.director { display: grid; grid-template-columns: 300px 1fr; gap: 48px; align-items: end; background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 40px 40px 0; overflow: hidden; }
+.director img { width: 100%; }
+.director .txt { padding-bottom: 40px; display: grid; gap: 14px; }
+.director .name { font-size: 1.3rem; font-weight: 900; }
+.director .name small { font-size: .95rem; font-weight: 500; color: var(--muted); margin-left: 6px; }
+.director blockquote { margin: 0; padding-left: 16px; border-left: 4px solid var(--yellow); font-size: 1.15rem; font-weight: 700; }
+.director ul { margin: 0; padding-left: 1.1em; color: var(--muted); }
+@media (max-width: 760px) {
+  .director { grid-template-columns: 1fr; padding: 28px 20px 0; gap: 8px; }
+  .director img { width: 220px; margin: 0 auto; order: 2; }
+  .director .txt { padding-bottom: 8px; }
+}
+
+/* CURRICULUM */
+.grades { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.grade { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px; display: grid; gap: 10px; align-content: start; }
+.grade .tag { justify-self: start; font-size: .78rem; font-weight: 700; padding: 3px 10px; border-radius: 999px; background: var(--bg); color: var(--navy-ink); }
+.grade.hot { border: 2px solid var(--yellow); background: linear-gradient(var(--yellow-soft), var(--card) 60%); }
+.grade.hot .tag { background: var(--yellow); color: #151a3e; }
+.grade p { color: var(--muted); font-size: .95rem; }
+.grade .meta { font-size: .88rem; color: var(--fg); border-top: 1px dashed var(--line); padding-top: 10px; margin-top: 4px; }
+.more { margin-top: 28px; text-align: center; }
+@media (max-width: 860px) { .grades { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .grades { grid-template-columns: 1fr; } }
+
+/* TUITION */
+.fee-wrap { background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow-x: auto; }
+.fee { width: 100%; border-collapse: collapse; min-width: 480px; }
+.fee th, .fee td { padding: 14px 20px; text-align: left; border-bottom: 1px solid var(--line); }
+.fee th { font-size: .85rem; color: var(--muted); font-weight: 700; background: var(--bg); }
+.fee tbody tr:last-child td { border-bottom: 0; }
+.fee td:first-child { font-weight: 700; }
+.fee .r { text-align: right; font-variant-numeric: tabular-nums; }
+.fee td.r { font-weight: 900; color: var(--navy-ink); }
+@media (max-width: 560px) {
+  .fee { min-width: 0; font-size: .9rem; }
+  .fee th, .fee td { padding: 12px 10px; }
+  .fee th:nth-child(2), .fee td:nth-child(2) { display: none; }
+  .fee td.r { white-space: nowrap; }
+}
+.refund { margin-top: 16px; color: var(--muted); font-size: .92rem; }
+.refund summary { cursor: pointer; font-weight: 700; color: var(--fg); }
+.refund ul { margin: 10px 0 0; padding-left: 1.2em; }
+.reg { color: #e6e8f5; }
+
+/* METHOD */
+.method-sec { background: var(--navy); color: #fff; }
+.method-sec .eyebrow { color: var(--yellow); }
+.method-sec .lead { color: var(--hero-muted); }
+.methods { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; counter-reset: m; }
+.m { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); border-radius: 16px; padding: 24px; display: grid; gap: 8px; align-content: start; }
+.m::before { counter-increment: m; content: "0" counter(m); font-family: var(--font-display); color: var(--yellow); font-size: 1.6rem; line-height: 1; }
+.m p { color: var(--hero-muted); font-size: .95rem; }
+.pledge { margin-top: 32px; text-align: center; font-family: var(--font-display); font-size: clamp(1.2rem, 3vw, 1.6rem); color: var(--yellow); }
+@media (max-width: 860px) { .methods { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .methods { grid-template-columns: 1fr; } }
+
+/* VIDEO + BLOG */
+.media { display: grid; grid-template-columns: 1.5fr 1fr; gap: 24px; align-items: stretch; }
+.video-box { border-radius: 16px; overflow: hidden; background: #000; }
+.video-box video { width: 100%; height: 100%; object-fit: cover; }
+.blog-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 28px; display: grid; gap: 14px; align-content: center; text-decoration: none; transition: border-color .15s, transform .15s; }
+.blog-card:hover { border-color: #03c75a; transform: translateY(-2px); }
+.blog-card .n { width: 44px; height: 44px; border-radius: 10px; background: #03c75a; color: #fff; font-weight: 900; font-size: 1.4rem; display: grid; place-items: center; }
+.blog-card p { color: var(--muted); }
+.blog-card .go { font-weight: 700; color: #03a14b; }
+.side { display: grid; gap: 16px; }
+.blog-card.insta:hover { border-color: #d6249f; }
+.blog-card.insta .n { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%); }
+.blog-card.insta .go { color: #c13584; }
+@media (max-width: 760px) { .media { grid-template-columns: 1fr; } }
+
+/* LOCATION */
+.loc { display: grid; grid-template-columns: 1fr 1.2fr; gap: 24px; }
+.info { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 28px; display: grid; gap: 18px; align-content: start; }
+.info dt { font-size: .82rem; font-weight: 700; color: var(--muted); }
+.info dd { margin: 2px 0 0; font-weight: 700; font-size: 1.05rem; }
+.info dd a { text-decoration: none; color: var(--navy-ink); }
+.info .links { display: flex; flex-wrap: wrap; gap: 8px; }
+.info .links a { font-size: .88rem; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); text-decoration: none; font-weight: 500; }
+.info .links a:hover { border-color: var(--navy); }
+.map { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); min-height: 340px; background: var(--card); }
+.map iframe { width: 100%; height: 100%; min-height: 340px; border: 0; display: block; }
+@media (max-width: 760px) { .loc { grid-template-columns: 1fr; } }
+
+/* CTA + FOOTER */
+.cta { background: var(--yellow); text-align: center; padding-block: 56px; }
+.cta h2 { color: #151a3e; }
+.cta p { margin: 10px 0 24px; color: #4a3f10; }
+footer { background: #10164a; color: #a6acd0; font-size: .88rem; padding-block: 32px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+footer b { color: #fff; }
+.call-fab { display: none; }
+@media (max-width: 760px) {
+  .call-fab { display: flex; position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 60; width: 56px; height: 56px; border-radius: 50%; background: var(--yellow); color: #151a3e; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(0,0,0,.25); }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="images/logo.png" alt="">수학이 만드는 세상</a>
+    <button class="menu-btn" type="button" aria-label="메뉴 열기" aria-expanded="false">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="menu">
+      <li><a href="#about">학원 소개</a></li>
+      <li><a href="#director">원장 소개</a></li>
+      <li><a href="#curriculum">커리큘럼</a></li>
+      <li><a href="#tuition">교습비</a></li>
+      <li><a href="#method">수업 방식</a></li>
+      <li><a href="#location">오시는 길</a></li>
+      <li class="call"><a href="tel:0314442223">상담 031-444-2223</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="badge">2027 반 편성 상담 중</span>
+      <h1>고3 대입까지<br><em>함께하는</em> 수학학원</h1>
+      <p>초등부터 고3까지, 각 분야 전문 선생님이 한 흐름으로 지도합니다. 2005년 김범수수학학원으로 시작해 20년 넘게 안양 학생들과 함께했습니다.</p>
+      <div class="ctas">
+        <a class="btn btn-yellow" href="tel:0314442223">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+          상담 전화하기
+        </a>
+        <a class="btn btn-ghost" href="curriculum.html">2027 커리큘럼 보기</a>
+      </div>
+    </div>
+    <div class="hero-logo"><img src="images/logo.png" alt="수학이 만드는 세상 로고"></div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">학원 소개</span>
+      <h2>빠른 아이보다, 단단한 아이로</h2>
+      <p class="lead">수학이 만드는 세상(수만세)은 고3 대입까지 함께하는 수학학원입니다. 각 분야별 전문 선생님으로 구성해 학생 한 명 한 명의 수학 학습을 효율적으로 관리합니다.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>2005</b><span>김범수수학학원으로 시작</span></div>
+      <div class="stat"><b>20년+</b><span>안양 고등부 대입 지도</span></div>
+      <div class="stat"><b>5명 내외</b><span>중·고등부 한 반 소수 정원</span></div>
+      <div class="stat"><b>초등~고3</b><span>한 노선으로 이어지는 커리큘럼</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="director" style="padding-top:0">
+  <div class="wrap">
+    <div class="director">
+      <img src="images/director.png" alt="김범수 원장">
+      <div class="txt">
+        <span class="eyebrow">원장 소개</span>
+        <div class="name">김범수 <small>수학이 만드는 세상 원장</small></div>
+        <blockquote>“완성되지 않은 상태에서는 진도를 나가지 않습니다.”</blockquote>
+        <ul>
+          <li>2005년 김범수수학학원 개원, 20년 넘게 안양에서 대입 수학 지도</li>
+          <li>고2·고3 원장 직강: 내신, 수능, 수리논술</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="curriculum" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">학년별 커리큘럼</span>
+      <h2>초등부터 고3까지 한 노선으로</h2>
+      <p class="lead">학원을 옮길 때마다 처음부터 다시 맞추지 않아도 되도록, 초등부터 고3까지 한 흐름으로 설계했습니다.</p>
+    </div>
+    <div class="grades">
+      <div class="grade"><span class="tag">학년 파괴 · 1:1</span><h3>초등부</h3><p>전원 1:1 개별관리, 학년 구분 없이 아이 속도에 맞춥니다. 관리할 수 있는 만큼만 학생을 받습니다.</p><div class="meta">주 3회 · 회당 100분</div></div>
+      <div class="grade"><span class="tag">중1 ~ 중2</span><h3>중등부</h3><p>개별 진도로 중등 수학의 틀을 잡고, 시험 기간에는 학교별 내신 대비로 전환합니다.</p><div class="meta">주 2회 · 회당 3시간</div></div>
+      <div class="grade hot"><span class="tag">중3 · 집중 모집</span><h3>예비 고1</h3><p>중3 내신과 고1 공통수학1·2를 함께 준비합니다. 수준별 반 편성.</p><div class="meta">학기 중 주 2회 · 방학 주 4일</div></div>
+      <div class="grade"><span class="tag">공통수학1·2</span><h3>고1</h3><p>5등급제 내신에 맞춘 학교별 시험 분석. 학기 중 내신, 방학 중 다음 과목 선행.</p><div class="meta">주 2회 · 회당 3시간</div></div>
+      <div class="grade"><span class="tag">원장 직강</span><h3>고2</h3><p>대수, 미적분Ⅰ, 확률과 통계를 학교 편성 순서에 맞춰 내신과 수능 범위를 동시에 완성합니다.</p><div class="meta">주 2회 · 회당 3시간</div></div>
+      <div class="grade"><span class="tag">원장 직강</span><h3>고3</h3><p>바뀐 2028학년도 수능의 첫 세대. 3학년 내신, 수능 실전, 수리논술까지 한 곳에서.</p><div class="meta">대수 · 미적분Ⅰ · 확률과 통계</div></div>
+    </div>
+    <div class="more"><a class="btn btn-navy" href="curriculum.html">2027 커리큘럼 자세히 보기 →</a></div>
+  </div>
+</section>
+
+<section id="tuition" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">교습비 안내</span>
+      <h2>교습과정별 교습비</h2>
+      <p class="lead">아래 교습비는 관할 교육지원청에 등록된 금액입니다.</p>
+    </div>
+    <div class="fee-wrap">
+      <table class="fee">
+        <thead><tr><th>교습과정</th><th>대상</th><th>교습시간</th><th class="r">교습비 (월)</th></tr></thead>
+        <tbody>
+          <tr><td>초등수학</td><td>초등부</td><td>주 3회 · 회당 100분</td><td class="r">270,000원</td></tr>
+          <tr><td>중등수학</td><td>중1 ~ 중3</td><td>주 2회 · 회당 3시간</td><td class="r">360,000원</td></tr>
+          <tr><td>공통수학</td><td>고1</td><td>주 2회 · 회당 3시간</td><td class="r">420,000원</td></tr>
+          <tr><td>고2/고3 수학</td><td>고2 · 고3</td><td>주 2회 · 회당 3시간</td><td class="r">450,000원</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <details class="refund">
+      <summary>교습비 반환 기준 (학원법 시행령 기준)</summary>
+      <ul>
+        <li>교습 시작 전: 이미 낸 교습비 전액 반환</li>
+        <li>총 교습시간의 1/3 경과 전: 이미 낸 교습비의 2/3 반환</li>
+        <li>총 교습시간의 1/2 경과 전: 이미 낸 교습비의 1/2 반환</li>
+        <li>총 교습시간의 1/2 경과 후: 반환하지 않음</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section id="method" class="method-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">수업 방식</span>
+      <h2>모든 학년에 공통으로</h2>
+      <p class="lead">진도를 빨리 나가는 것보다 먼저, 비어 있는 곳을 찾아 채웁니다.</p>
+    </div>
+    <div class="methods">
+      <div class="m"><h3>입학 진단</h3><p>처음 오면 지금 학년까지의 개념 중 어디가 비어 있는지부터 확인합니다.</p></div>
+      <div class="m"><h3>빈틈 메우기</h3><p>진도보다 먼저 비어 있는 개념을 꼼꼼히 채우고 출발합니다.</p></div>
+      <div class="m"><h3>설명하는 수업</h3><p>문제를 맞히는 것으로 끝내지 않고, 왜 그렇게 풀었는지 말로 설명하게 합니다.</p></div>
+      <div class="m"><h3>오답 분석</h3><p>틀린 문제는 개념 부족인지, 해석 실수인지 원인을 나눠 다시 잡습니다.</p></div>
+    </div>
+    <p class="pledge">완성되지 않은 상태에서는 진도를 나가지 않습니다.</p>
+  </div>
+</section>
+
+<section id="media">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">학원 둘러보기</span>
+      <h2>수만세 이야기</h2>
+    </div>
+    <div class="media">
+      <div class="video-box">
+        <video src="videos/academy.mp4" controls playsinline preload="metadata" muted></video>
+      </div>
+      <div class="side">
+        <a class="blog-card" href="https://blog.naver.com/kbsmathlove" target="_blank" rel="noopener">
+          <span class="n">N</span>
+          <h3>수만세 공식 블로그</h3>
+          <p>입시 정보, 교육과정 변화, 학년별 공부법과 학원 소식을 블로그에서 전해 드립니다.</p>
+          <span class="go">블로그 바로가기 →</span>
+        </a>
+        <a class="blog-card insta" href="https://www.instagram.com/sumanse_math" target="_blank" rel="noopener">
+          <span class="n"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+          <h3>인스타그램 @sumanse_math</h3>
+          <p>학원 일상과 소식을 사진으로 만나보세요.</p>
+          <span class="go">인스타그램 바로가기 →</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="location" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">오시는 길</span>
+      <h2>안양천서로 229, 다이소 건물 302호</h2>
+    </div>
+    <div class="loc">
+      <dl class="info">
+        <div><dt>주소</dt><dd>경기도 안양시 만안구 안양천서로 229, 302호 (다이소 건물)</dd></div>
+        <div><dt>운영 시간</dt><dd>22:00까지</dd></div>
+        <div><dt>상담 전화</dt><dd><a href="tel:0314442223">031-444-2223</a></dd></div>
+        <div><dt>방문 상담</dt><dd>예약제로 운영합니다. 전화로 먼저 연락 주세요.</dd></div>
+        <div class="links">
+          <a href="https://map.naver.com/p/entry/place/35372896" target="_blank" rel="noopener">네이버 지도</a>
+          <a href="https://map.kakao.com/?q=%EC%95%88%EC%96%91%EC%B2%9C%EC%84%9C%EB%A1%9C%20229" target="_blank" rel="noopener">카카오맵</a>
+        </div>
+      </dl>
+      <div class="map">
+        <iframe title="학원 위치 지도" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%95%88%EC%96%91%EC%8B%9C%20%EB%A7%8C%EC%95%88%EA%B5%AC%20%EC%95%88%EC%96%91%EC%B2%9C%EC%84%9C%EB%A1%9C%20229&z=17&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>2027 반 편성 상담을 받고 있습니다</h2>
+    <p>진단 테스트 후 수준에 맞는 반으로 배정해 드립니다.</p>
+    <a class="btn btn-navy" href="tel:0314442223">031-444-2223 전화 상담</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>수학이 만드는 세상</b> · (구) 김범수수학학원<br>경기도 안양시 만안구 안양천서로 229, 302호 · 031-444-2223<br><span class="reg">학원 등록번호: 제 2005-064호 · 교습과정: 보통교과(수학) · 교습비는 위 교습비 안내 참고</span></div>
+    <div><a href="https://blog.naver.com/kbsmathlove" target="_blank" rel="noopener">블로그</a> · <a href="https://www.instagram.com/sumanse_math" target="_blank" rel="noopener">인스타그램</a><br>© 수학이 만드는 세상</div>
+  </div>
+</footer>
+
+<a class="call-fab" href="tel:0314442223" aria-label="상담 전화">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+</a>
+
+<script>
+(function () {
+  var btn = document.querySelector('.menu-btn');
+  var menu = document.querySelector('.menu');
+  btn.addEventListener('click', function () {
+    var open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') { menu.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+  });
+})();
+</script>
+</body>
+</html>
