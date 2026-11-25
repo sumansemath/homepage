@@ -89,17 +89,16 @@ h3 { font-size: 1.12rem; font-weight: 700; line-height: 1.4; }
 @media (max-width: 760px) { .stats { grid-template-columns: 1fr 1fr; } }
 
 /* DIRECTOR */
-.director { display: grid; grid-template-columns: 300px 1fr; gap: 48px; align-items: end; background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 40px 40px 0; overflow: hidden; }
-.director img { width: 100%; }
-.director .txt { padding-bottom: 40px; display: grid; gap: 14px; }
+.director { display: grid; grid-template-columns: 420px 1fr; gap: 40px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 32px; overflow: hidden; }
+.director img { width: 100%; height: auto; border-radius: 16px; }
+.director .txt { display: grid; gap: 14px; }
 .director .name { font-size: 1.3rem; font-weight: 900; }
 .director .name small { font-size: .95rem; font-weight: 500; color: var(--muted); margin-left: 6px; }
 .director blockquote { margin: 0; padding-left: 16px; border-left: 4px solid var(--yellow); font-size: 1.15rem; font-weight: 700; }
 .director ul { margin: 0; padding-left: 1.1em; color: var(--muted); }
 @media (max-width: 760px) {
-  .director { grid-template-columns: 1fr; padding: 28px 20px 0; gap: 8px; }
-  .director img { width: 220px; margin: 0 auto; order: 2; }
-  .director .txt { padding-bottom: 8px; }
+  .director { grid-template-columns: 1fr; padding: 20px; gap: 20px; }
+  .director img { width: 100%; }
 }
 
 /* CURRICULUM */
@@ -252,7 +251,7 @@ footer b { color: #fff; }
 <section id="director" style="padding-top:0">
   <div class="wrap">
     <div class="director">
-      <img src="images/director.png" alt="김범수 원장">
+      <img src="images/director-class.jpg" width="1137" height="685" alt="칠판 앞에서 수학 문제를 설명하는 김범수 원장">
       <div class="txt">
         <span class="eyebrow">원장 소개</span>
         <div class="name">김범수 <small>수학이 만드는 세상 원장</small></div>
